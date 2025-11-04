@@ -1,0 +1,153 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	width:100%
+}
+
+body {
+	background-color: #eee;
+}
+
+#content {
+	max-width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	grid-template-rows: auto 600px 300px auto;
+	grid-template-areas:
+		"nav nav nav nav"
+		"title title title title"
+		"offer offer offer partners"
+		"merch bfl fd partners";
+}
+
+#title {
+	grid-area: title;
+	background-image: url('../img/happiest-dog.webp');
+}
+
+#offer {
+	grid-area: offer;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+#partners {
+	grid-area: partners;
+	display: flex;
+	flex-direction: column;
+	/*gap: 20px;*/
+	object-fit: contain;
+}
+
+.partnerImg{
+	height: 100%;
+	width:auto;
+	margin: auto;
+	object-fit: contain;
+}
+
+#partnerImgs {
+	display: flex;
+	flex-direction: column;
+}
+
+#merch {
+	grid-area: merch;
+}
+
+#bfl {
+	grid-area: bfl;
+}
+
+#fd {
+	grid-area: fd;
+}
+
+.rounded {
+	border-radius: 30px;
+}
+
+.grid {
+	background-color: white;
+	padding: 20px;
+}
+
+#groominImg {
+	height:100%;
+	width:auto;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 20px;
+	grid-area: nav;
+	margin-bottom: -20px;
+}
+
+nav img {
+	object-fit: contain;
+	height: 100%;
+	width: auto;
+}
+
+#leftNav {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	width: auto;
+}
+
+#leftNav h1 {
+	margin: auto;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+}
+
+#title {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: end;
+	padding: 10px;
+}
+
+#title div h1, #title div h2 {
+	color: white;
+	margin-top: 5px;
+}
+
+#title div h1 {
+	font-size: 50px;
+}
+
+h1, h2, h3, h4, p, a {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li h3 a {
+	text-decoration: none;
+	color: black;
+}
+
+nav h3 {
+	margin: auto;
+}
+
+.grid img {
+	border-radius: 20px;
+}

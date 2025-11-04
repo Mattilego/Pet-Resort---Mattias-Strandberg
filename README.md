@@ -1,5 +1,4 @@
-# Pet Resort - DITT NAMN
-Börja med att byta ut DITT NAMN mot ditt namn och radera sedan denna rad. 
+# Pet Resort - Mattias Strandberg
 
 Uppgiften bygger på att **återskapa layouten till sajten Pet Resort**. Det är alltså en liknande övning som Nails var tidigare, fast nu med flex och grid. Du väljer själv vilken teknik du vill använda, men för att lösa uppgiften behöver du använda någon av dem.
 
