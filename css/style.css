@@ -41,8 +41,8 @@ body {
 	grid-area: partners;
 	display: flex;
 	flex-direction: column;
-	/*gap: 20px;*/
-	object-fit: contain;
+	overflow: hidden;
+	height: 100%;
 }
 
 .partnerImg{
@@ -107,6 +107,7 @@ nav img {
 
 #leftNav h1 {
 	margin: auto;
+	padding-bottom: 10px;
 }
 
 ul {
