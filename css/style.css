@@ -11,6 +11,12 @@ body {
 	background-color: #eee;
 }
 
+h1, h2, h3, h4, p, a {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 #content {
 	max-width: 1200px;
 	margin: auto;
@@ -23,6 +29,43 @@ body {
 		"title title title title"
 		"offer offer offer partners"
 		"merch bfl fd partners";
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 20px;
+	grid-area: nav;
+	margin-bottom: -20px;
+}
+
+nav img {
+	object-fit: contain;
+	height: 100%;
+	width: auto;
+}
+
+nav h3 {
+	margin: auto;
+}
+
+#leftNav {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	width: auto;
+}
+
+#leftNav h1 {
+	margin: auto;
+	padding-bottom: 10px;
+}
+
+
+li h3 a {
+	text-decoration: none;
+	color: black;
 }
 
 #title {
@@ -78,36 +121,13 @@ body {
 	padding: 20px;
 }
 
+.grid img {
+	border-radius: 20px;
+}
+
 #groominImg {
 	height:100%;
 	width:auto;
-}
-
-nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	gap: 20px;
-	grid-area: nav;
-	margin-bottom: -20px;
-}
-
-nav img {
-	object-fit: contain;
-	height: 100%;
-	width: auto;
-}
-
-#leftNav {
-	display: flex;
-	flex-direction: row;
-	gap: 20px;
-	width: auto;
-}
-
-#leftNav h1 {
-	margin: auto;
-	padding-bottom: 10px;
 }
 
 ul {
@@ -132,23 +152,4 @@ ul {
 
 #title div h1 {
 	font-size: 50px;
-}
-
-h1, h2, h3, h4, p, a {
-	margin-left: 10px;
-	margin-right: 10px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-li h3 a {
-	text-decoration: none;
-	color: black;
-}
-
-nav h3 {
-	margin: auto;
-}
-
-.grid img {
-	border-radius: 20px;
 }
